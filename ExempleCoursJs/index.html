@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="testload()">
+    <button type="button"  id="bouton_verif"> Test </button>
+        <select id="Select">
+            <option value="2A1">2A1</option>
+            <option value="2A2">2A2</option>
+        </select>
+        <p id="classe"></p>
+    <script>
+        function testload() { 
+            console.log("Loaded");
+        }
+        function verif(){
+            alert('bouton de vérification')
+        }
+        const btn = document.getElementById("bouton_verif");
+        btn.addEventListener("click", ()=>verif());
+        var x = document.getElementById("Select")
+        x.addEventListener("change" , function(){
+            var v = document.getElementById("Select").value;
+            var p = document.getElementById("classe").innerHTML= v;
+        })
+    </script>
+</body>
+</html>

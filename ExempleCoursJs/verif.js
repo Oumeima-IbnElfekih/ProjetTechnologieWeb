@@ -16,12 +16,10 @@ var formElement = document.getElementById("form")
 var nameElement = document.getElementById("nom");
 formElement.addEventListener("submit", function(event){
     event.preventDefault()
-    validateName()
+    NameValidate()
 
 }) 
-
-
-function validateName(){
+function NameValidate(){
     var NameValue = nameElement.value ;
     var pattern = /^[a-z A-Z]+$/
     var nameError = document.getElementById("NameError")

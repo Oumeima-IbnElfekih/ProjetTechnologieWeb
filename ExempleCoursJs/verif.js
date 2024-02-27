@@ -12,13 +12,7 @@ function validerDateOfBirth(){
         }
 }
 
-var formElement = document.getElementById("form") 
-var nameElement = document.getElementById("nom");
-formElement.addEventListener("submit", function(event){
-    event.preventDefault()
-    NameValidate()
 
-}) 
 function NameValidate(){
     var NameValue = nameElement.value ;
     var pattern = /^[a-z A-Z]+$/
@@ -30,4 +24,13 @@ function NameValidate(){
         nameError.innerHTML= "<span style='color :green'>Correct</span>"
     }
 }
+
+
+var formElement = document.getElementById("form") 
+var nameElement = document.getElementById("nom");
+formElement.addEventListener("submit", function(event){
+    event.preventDefault()
+    NameValidate()
+
+}) 
 

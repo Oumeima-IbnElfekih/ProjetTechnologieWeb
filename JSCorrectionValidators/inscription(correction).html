@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Accueil</title>
+    <style>
+      /* Ajoutez ici le CSS pour personnaliser le style de la page */
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <br />
+      <nav>
+        <div>
+          <a href="accueil.html">Home</a>
+          <a href="projets_taches.html">Projets et tâches</a>
+          <a href="liste_employes.html">Liste employés</a>
+          <a href="inscription.html">Inscription</a>
+        </div>
+      </nav>
+      <br />
+      <hr />
+      <br />
+      <img
+        src="assets/img1.jpg"
+        width="100%"
+        height="500"
+        alt="Image d'accueil"
+      />
+    </header>
+
+    <!-- Contenu de la page -->
+    <section>
+      <h1>Inscription au Site</h1>
+      <form action="" id="form">
+        <table>
+          <tr>
+            <td><label for="nom">Nom :</label></td>
+            <td>
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                
+              />
+            </td>
+           <td> <span id="erreurNom" style='color:red' ></span></td>
+          </tr>
+          <tr>
+            <td><label for="prenom">Prénom :</label></td>
+            <td>
+              <input
+                type="text"
+                id="prenom"
+                name="prenom"
+               
+              />
+            </td>
+            <td> <p id="errorPrenom" style='color:red' ></p></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email :</label></td>
+            <td><input type="email" id="email" name="email"  /></td>
+             <td> <span id="erreurEmail" style='color:red' ></span></td>
+          </tr>
+          <tr>
+            <td><label for="telephone">Téléphone :</label></td>
+            <td>
+              <input
+                type="text"
+                id="telephone"
+                name="telephone"
+               
+              />
+            </td>
+            <td> <span id="erreurTelephone" style='color:red' ></span></td>
+          </tr>
+          <tr>
+            <td><label for="date_naissance">Date de naissance :</label></td>
+            <td>
+              <input
+                type="date"
+                id="date_naissance"
+                name="date_naissance"
+                
+
+              />
+            </td>
+            <td> <span id="errorDate_naissance" style='color:red' ></span></td>
+          </tr>
+          <tr>
+            <td><label for="password">Mot de passe:</label></td>
+            <td>
+              <input
+              type="password"
+              id="password"
+              name="password"
+               />
+            </td>
+            <td> <span id="errorDate_password" style='color:red' ></span></td>
+          </tr>
+        </table>
+        <input type="submit" value="S'inscrire" />
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <br />
+    <hr />
+    <footer>
+      <p>
+        Vous pouvez nous contacter par email :
+        <a href="mailto:contact@esprit.tn">contact@esprit.tn</a>
+      </p>
+      <p>Adresse : Ghazela, Tunis</p>
+    </footer>
+    <script src="inscription.js"></script>
+    
+  </body>
+</html>
